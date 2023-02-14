@@ -19,7 +19,7 @@ body {
 
 body::before {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -36,6 +36,7 @@ body::before {
 }
 
 header {
+  width: 750px;
   margin: 140px auto 58px;
 }
 
@@ -45,10 +46,11 @@ header h1 {
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
+
+  margin-bottom: 18px;
 }
 
 header p {
-  width: 420px;
   font-size: 20px;
   font-weight: 400;
 
@@ -60,14 +62,18 @@ form {
   height: 1250px;
 
   padding: 64px;
+  border-radius: 8px;
 
   background: #ffffff;
 }
 
 fieldset {
   border: none;
-  margin: 0;
-  padding: 0;
+}
+
+fieldset:nth-child(2),
+fieldset:nth-child(3) {
+  margin-top: 30px;
 }
 
 fieldset legend {
@@ -79,7 +85,7 @@ fieldset legend {
   text-transform: uppercase;
 
   width: 100%;
-  padding: 16px;
+  padding-bottom: 16px;
 
   border-bottom: 1px solid #e6e6f0;
 }
@@ -87,6 +93,8 @@ fieldset legend {
 .inputWrapper {
   display: flex;
   flex-direction: column;
+
+  width: 100%;
 
   margin-top: 24px;
 }
@@ -117,4 +125,24 @@ fieldset legend {
 
 .col-2 {
   display: flex;
+  gap: 22px;
+}
+
+.inputWrapper span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #c1bccc;
+}
+
+.cols-3 {
+  display: flex;
+  gap: 32px;
+}
+
+.cols-3 .col-2 input {
+  width: 150px;
+}
+
+h3 {
+  padding-top: 32px;
 }
