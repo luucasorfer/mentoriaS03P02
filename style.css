@@ -201,3 +201,11 @@ footer input:hover {
 
   cursor: pointer;
 }
+
+/*Quando o elemento estiver com foco e for inválido,
+o outline é removido e é adicionada uma box-shadow
+vermelha em torno do elemento.*/
+.inputWrapper input:focus:invalid {
+  outline: none;
+  box-shadow: 0 0 0 1px red;
+}
