@@ -122,6 +122,10 @@ fieldset legend {
   margin-left: 8px;
 }
 
+.inputWrapper span:hover {
+  color: #454447;
+}
+
 .inputWrapper input {
   height: 56px;
   padding: 11px;
@@ -188,4 +192,12 @@ footer input {
   background: #ff5374;
   border-radius: 20px;
   border: none;
+
+  transition: filter 0.3s;
+}
+
+footer input:hover {
+  filter: brightness(0.9);
+
+  cursor: pointer;
 }
