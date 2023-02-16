@@ -117,13 +117,14 @@ fieldset legend {
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  color: #c1bccc;
+  color: #4e4958;
+  opacity: .5;
 
   margin-left: 8px;
 }
 
 .inputWrapper span:hover {
-  color: #454447;
+  opacity: 1;
 }
 
 .inputWrapper input {
